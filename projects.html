@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>Projects</title>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="contact">
+    <h1>Ethan's Projects</h1>
+    <h4><a href="https://github.com/ethanpailes/">My Github</a></h4>
+    <h4><a href="resume.html">My Resume</a></h4>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2><a href="https://github.com/ethanpailes/bbc">Byte Blocks</a></h2>
+    </div>
+    <div class="section-body">
+
+      <h4>About</h4>
+      <p>
+      Byte Blocks is a low level data description language which allows
+      users to define a structured data format using a simple syntax
+      with an obvious correspondence to the on-disk representation of
+      data. The byte blocks compiler, written in Haskell, generates
+      C headers which contain generated parsers and serializers for
+      the Byte Blocks definitions. It is straightforward to define a
+      make rule which smoothly integrates Byte Blocks into any existing
+      C code base.
+      </p>
+      
+      <p>
+      The Byte Blocks compiler currently generates between 100
+      and 300 lines of C for every 10 lines of Byte Blocks. This code
+      expansion serves as both an indication of the increased expressiveness
+      that Byte Blocks offers and the inevitable result of code generation.
+      </p>
+      <p>
+      Though Byte Blocks currently only targets C it is conceived as
+      a language independent data format. Adding support for a new target
+      language is as simple as adding a new module to the compiler.
+      </p>
+
+      <h4>Related Work</h4>
+      <p>
+      Byte Blocks drew architectural inspiration from
+      <a href="https://developers.google.com/protocol-buffers/?hl=en">
+        Google Protobufs</a>. The
+      <a href="http://pads.cs.tufts.edu/papers/icdt11.pdf">PADS language</a>
+      is an EDSL hosted in several languages which focuses on ad-hoc data
+      description using declarative forms. Byte Blocks tries to join
+      PADS's ad hoc data descriptive ability with the language independent
+      architecture of Google Protobufs. Both of these projects are more
+      mature than Byte Blocks and most likely represent better choices
+      for serious work at this point.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2><a href="https://github.com/ethanpailes/wiki_parsing">Wiki Parsing</a></h2>
+    </div>
+    <div class="section-body">
+      <p>
+      Wikipedia provides all of its source text in large archive files,
+      and this project represents my flirtation with using python to
+      scrape the text data for interesting facts. I a python script
+      in a batch manner to filter out all the articles which looked like
+      they were about universities. A <a href="https://github.com/ethanpailes/wiki_parsing/blob/master/universities/extract_info.py">second script</a>
+      ran over the reduced
+      dataset to pull out location and data information about each university.
+      The results were <a href="https://github.com/ethanpailes/wiki_parsing/blob/master/universities/output/wiki_universities.png">graphed</a>
+      using R.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2><a href="https://github.com/ethanpailes/sudoku-solver">Sudoku Solver</a></h2>
+    </div>
+    <div class="section-body">
+      <p>
+      After I finished my course on Programming Languages I felt that I
+      did not really understand monads well enough. The solution seemed
+      to be learning Haskell. This project was the result of that impulse
+      along with a healthy mistrust of anything involving too much arithmetic.
+      I did not end up learning about monads, but this was my Haskell "Hello
+      World." The project currently only solves puzzles which are hard coded
+      into the source. To be useful it requires a parser, which I may even
+      write one of these days.
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>
