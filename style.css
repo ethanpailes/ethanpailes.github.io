@@ -17,17 +17,20 @@ h1 {
   text-align: center;
 }
 
-#hp-block {
+.container {
   display: block;
+  text-align: center;
 }
 
 #resume {
   display: inline-block;
-  width: 30%
+  width: 30%;
+  float: left;
 }
-#bio {
+#projects {
   display: inline-block;
-  width: 25%
+  width: 25%;
+  float: right;
 }
 
 .center {
@@ -65,3 +68,8 @@ h1 {
   display: inline-block;
   width: 75%;
 }
+
+#name {
+  font-style: italic;
+}
+
